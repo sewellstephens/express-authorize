@@ -1,0 +1,25 @@
+{
+    "name": "simpler-express-authorize",
+    "version": "1.0.2",
+    "description": "A simple express middleware to authorize users",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "express"
+    ],
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.20.2",
+        "cookie-parser": "^1.4.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-validator": "^6.6.1",
+        "googleapis": "^134.0.0",
+        "jsonwebtoken": "^9.0.2",
+        "nodemailer": "^6.4.13",
+        "nodemon": "^3.0.3",
+        "semver": "^7.5.2"
+    }
+}
