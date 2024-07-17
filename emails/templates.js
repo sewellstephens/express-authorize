@@ -37,70 +37,53 @@ a.button {
 }
 `;
 
-const welcomeTemplate = (name, config) => `
+const resetPasswordTemplate = (resetToken) => `
     <html>
         <head>
-            <title>Welcome</title>
+            <title>Reset Your Password</title>
             <style>${globalStyle}</style>
         </head>
         <body>
         <div class="container">
-        <div style="display: flex; align-items: center; justify-content: center;"><a href="https://krastie.ai"><img src="https://${process.env.FRONTEND_URL}/krastie-ai-logo-color.png" style="width: 150px;"></img></a></div>
-        <h1>Welcome to Krastie AI</h1>
-        <p>Stat using Krastie AI today and write like a professional with our built in Krastie chatbot and AI autocomplete.:</p>
-        <p><a class="button" href="https://${process.env.FRONTEND_URL}/dashboard" target="_blank">Start now</a></p>
+        <div style="display: flex; align-items: center; justify-content: center;"><a href="https://krastie.ai"><img src="${process.env.FRONTEND_URL}/images/logo.png" style="width: 150px;"></img></a></div>
+        
+        <h1>Reset Your Password</h1>
+        <p>Hey there!</p>
+        <p>You are about to reset your password. Continue to do so by following this link:</p>
+        <p><a class="button" href="${process.env.FRONTEND_URL}/reset?token=${resetToken}" target="_blank">Reset Password</a></p>
+        <p>Or paste the url in your browser: ${process.env.FRONTEND_URL}/reset?token=${resetToken}</p>
+        <p>You can ignore if you remembered your password</p>
         <p style="margin-top: 40px;">
-            Sewell Stephens 👋<br/>
-            <a href="https://krastie.ai" target="_blank">Krastie AI</a>
+            ${process.env.NAME} 👋<br/>
+            <a href="${process.env.HOMEPAGE_URL}" target="_blank">${process.env.PRODUCT_NAME}</a>
         </p>
         </div>
         </body>
     </html>
 `;
 
-const emailConfirmationTemplate = (activationToken, config) => `
+const emailConfirmationTemplate = (activationToken) => `
     <html>
         <head>
             <title>Confirm Your Email</title>
             <style>${globalStyle}</style>
         </head>
         <body><div class="container">
-        <div style="display: flex; align-items: center; justify-content: center;"><a href="https://krastie.ai"><img src="https://${process.env.FRONTEND_URL}/krastie-ai-logo-color.png" style="width: 150px;"></img></a></div>
+        <div style="display: flex; align-items: center; justify-content: center;"><a href="https://krastie.ai"><img src="${process.env.FRONTEND_URL}/images/logo.png" style="width: 150px;"></img></a></div>
             <h1>Confirm Your Email</h1>
-            <p>Welcome to <strong>Krastie AI</strong>!</p>
-            <p>Please click the link to confirm your email</p>
-            <p><a class="button" href="https://api.krastie.ai/users/activate/${activationToken}" target="_blank">Confirm Email Address</a></p>
-            <p>Or copy and paste the following link into your browser: https://api.krastie.ai/users/activate/${activationToken}</p>
-            <p>Token expires in one hour</p>
+            <p>Welcome to <strong>${process.env.PRODUCT_NAME}</strong>!</p>
+            <p>Let's confirm your email address. Please click the button to confirm your email address:</p>
+            <p><a class="button" href="${process.env.BACKEND_URL}/users/activate/${activationToken}" target="_blank">Confirm Email Address</a></p>
+            <p>Or paste the url in your browser: ${process.env.BACKEND_URL}/users/activate/${activationToken}</p>
+            <p>Please confirm within 1 hour</p>
             <p style="margin-top: 40px;">
-                Sewell Stephens 👋<br/>
-                <a href="https://krastie.ai" target="_blank">Krastie AI</a>
+                ${process.env.NAME} 👋<br/>
+                <a href="${process.env.HOMEPAGE_URL}" target="_blank">${process.env.PRODUCT_NAME}</a>
             </p>
             </div>
         </body>
     </html>
 `;
 
-const customEmailTemplate = (content, email) => `
-    <html>
-        <head>
-            <title>Email</title>
-            <style>${globalStyle}</style>
-        </head>
-        <body>
-        <body><div class="container">
-         ${content}
-           <a href="https://api.krastie.ai/users/unsubscribe/${email}">Unsubscribe</a>
-            <p style="margin-top: 40px;">
-                Sewell Stephens 👋<br/>
-                <a href="https://krastie.ai" target="_blank">Krastie AI</a>
-            </p>
-            </div>
-        </body>
-        </body>
-    </html>
-`;
-
+exports.resetPasswordTemplate = resetPasswordTemplate;
 exports.emailConfirmationTemplate = emailConfirmationTemplate;
-exports.welcomeTemplate = welcomeTemplate;
-exports.customEmailTemplate = customEmailTemplate;
