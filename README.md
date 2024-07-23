@@ -30,6 +30,8 @@ app.use(simpleExpressAuth);
 
 Step 3: Update .env with your values
 
+UPDATE: btw sorry for confusion, i had to fix some thing and their are mone env values required. Had to ship this env update in rush as i just posted about it...
+
 ```
 DOMAIN= domain here
 FRONTEND_URL= frontend url here
@@ -43,6 +45,7 @@ MAIL_PASSWORD= password here
 MAIL_PORT=587
 MAIL_SENDER= sender here formatted as ME <hello@yoursite.com>
 MAIL_USER= mail user here
+MONGODB_URI= mongo url here
 ```
 
 If you want to only offer password signin, you will need to add a config like so:
