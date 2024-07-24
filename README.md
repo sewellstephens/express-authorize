@@ -32,7 +32,7 @@ app.use(simpleExpressAuth);
 
 Step 3: Update .env with your values
 
-UPDATE: btw sorry for confusion, i had to fix some thing and their are mone env values required. Had to ship this env update in rush as i just posted about it...
+UPDATE: MongoDB URI is required in order to connect to database. If you want to use a different one, you will need to either clone this repo or copy and paste the desired code.
 
 ```
 DOMAIN= domain here
