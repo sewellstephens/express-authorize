@@ -2,7 +2,7 @@
 
 Simple Express authorization promises to make authorization in Express super easy. Its the most straightforward and minimal framework on the market.
 
-If you dont believe it prod ready look at my https://krastie.ai site or better look at source code. Its super easy to understand even to noobs and is often overlooked how easy this shit is to implement auth even for noobs.
+I'm currently using it on my own site https://krastie.ai. Feel free to open an issue if you find any bugs or vulnerabilites.
 
 ### What it includes:
 
