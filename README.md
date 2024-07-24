@@ -10,7 +10,7 @@ I'm currently using it on my own site https://krastie.ai. Feel free to open an i
 - Email and password Auth
 - Uses MongoDB
 
-If you would like to use different database, or want more control you can clone the Github repository.
+If you would like to use different database, or want more control you can clone the Github repository or copy desired code.
 
 ### How to set it up:
 
