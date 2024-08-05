@@ -38,7 +38,7 @@ app.use(simpleExpressAuth);
 
 **Step 3: Update .env with your values**
 
-UPDATE: MongoDB URI is required in order to connect to database. If you want to use a different one, you will need to either clone this repo or copy and paste the desired code.
+IMPORTANT: MongoDB URI is required in order to connect to database. If you want to use a different one, you will need to either clone this repo or copy and paste the desired code.
 
 ```
 DOMAIN= domain here
