@@ -14,10 +14,16 @@ If you would like to use different database, or want more control you can clone 
 
 ### How to set it up:
 
-Step 1: install from NPM
+Step 1: install from NPM or clone for more control
 
 ```
 npm i simpler-express-authorize
+```
+
+Or
+
+```
+git clone https://github.com/sewellstephens/express-authorize.git
 ```
 
 Step 2: Add to your code as follows
@@ -65,14 +71,6 @@ app.use(simpleExpressAuth({
 ```
 
 Or to only offer Google sign in, replace passwordOnly with googleOnly.
-
-
-
-For even more control you can:
-
-```
-git clone https://github.com/sewellstephens/express-authorize.git
-```
 
 ### Routes to get familiar with
 
