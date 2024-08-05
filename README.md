@@ -1,6 +1,6 @@
 ## Simple Express authorization
 
-Simple Express authorization promises to make authorization in Express super easy. Its the most straightforward and minimal framework on the market.
+Simple Express authorization promises to make authorization in Express super easy. Its the most straightforward and minimal framework on the market. **No PassportJS used.**
 
 I'm currently using it on my own site https://krastie.ai. Feel free to open an issue if you find any bugs or vulnerabilites.
 
@@ -76,7 +76,7 @@ git clone https://github.com/sewellstephens/express-authorize.git
 
 ### Routes to get familiar with
 
-/users/signup (POST)
+**/users/signup (POST)**
 
 Sent a post request to signup user with password.
 
@@ -90,7 +90,7 @@ Requires body formatted as follows:
 }
 ```
 
-/users/login (POST)
+**/users/login (POST)**
 
 Send a post request to login user with password.
 
@@ -103,23 +103,23 @@ Requires body formatted as follows:
 }
 ```
 
-/users/google (GET)
+**/users/google (GET)**
 
 Gets a Google authorization URL based on Client ID and Secret defined in ENV file.
 
-/users/googleCallback (GET)
+**/users/googleCallback (GET)**
 
 Add this in when setting up your Google consent prompt.
 
-/users/logout (POST)
+**/users/logout (POST)**
 
 Logs out a user.
 
-/users/account (GET)
+**/users/account (GET)**
 
 Gets user information stored in MongoDB.
 
-/users/account (PUT)
+**/users/account (PUT)**
 
 Updates user email, password, and/or name.
 
@@ -133,23 +133,23 @@ Requires body formatted as follows:
 }
 ```
 
-/users/activate/:token (GET)
+**/users/activate/:token (GET)**
 
 Used when activating account, or when two factor is enabled.
 
-/users/resetToken (POST)
+**/users/resetToken (POST)**
 
 Used for sending password reset email.
 
-/users/resetPassword (POST)
+**/users/resetPassword (POST)**
 
 Used for reseting password.
 
-/users/delete (POST)
+**/users/delete (POST)**
 
 Used for deleting user.
 
-/users/activateTwoFactor
+**/users/activateTwoFactor**
 
 Used for activating two factor.
 
