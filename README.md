@@ -14,7 +14,7 @@ If you would like to use different database, or want more control you can clone 
 
 ### How to set it up:
 
-Step 1: install from NPM or clone for more control
+**Step 1: install from NPM or clone for more control**
 
 ```
 npm i simpler-express-authorize
@@ -26,7 +26,7 @@ Or
 git clone https://github.com/sewellstephens/express-authorize.git
 ```
 
-Step 2: Add to your code as follows
+**Step 2: Add to your code as follows**
 
 ```
 const {simpleExpressAuth} = require("simpler-express-authorize");
@@ -36,7 +36,7 @@ const {simpleExpressAuth} = require("simpler-express-authorize");
 app.use(simpleExpressAuth);
 ```
 
-Step 3: Update .env with your values
+**Step 3: Update .env with your values**
 
 UPDATE: MongoDB URI is required in order to connect to database. If you want to use a different one, you will need to either clone this repo or copy and paste the desired code.
 
