@@ -1,8 +1,11 @@
-## Simple Express authorization
+# Simple Express authorization
+![GitHub License](https://img.shields.io/github/license/sewellstephens/express-authorize)
+![GitHub Repo stars](https://img.shields.io/github/stars/sewellstephens/express-authorize)
+![GitHub Sponsors](https://img.shields.io/github/sponsors/sewellstephens)
+
+**PLEASE NOTE: UPDATES WILL CURRENTLY BE MINIMAL DUE TO LACK OF SUPPORT!!! TO KEEP THIS PROJECT ALIVE, PLEASE SUPPORT IT BY OPENING GITHUB ISSUES OR BETTER SPONSOR THE PROJECT [HERE](https://github.com/sponsors/sewellstephens)**
 
 Simple Express authorization promises to make authorization in Express super easy. Its the most straightforward and minimal framework on the market. **No PassportJS used.**
-
-I'm currently using it on my own site https://krastie.ai. Feel free to open an issue if you find any bugs or vulnerabilites.
 
 ### What it includes:
 
