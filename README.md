@@ -10,8 +10,6 @@ Simple Express authorization promises to make authorization in Express super eas
 - Email and password Auth
 - Uses MongoDB
 
-If you would like to use different database, or want more control you can clone the Github repository or copy desired code.
-
 ### How to set it up:
 
 **Step 1: clone repo or copy desired code**
