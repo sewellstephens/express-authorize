@@ -1,7 +1,4 @@
 # Simple Express authorization
-![GitHub License](https://img.shields.io/github/license/sewellstephens/express-authorize)
-![GitHub Repo stars](https://img.shields.io/github/stars/sewellstephens/express-authorize)
-![GitHub Sponsors](https://img.shields.io/github/sponsors/sewellstephens)
 
 **PLEASE NOTE: UPDATES WILL CURRENTLY BE MINIMAL DUE TO LACK OF SUPPORT!!! TO KEEP THIS PROJECT ALIVE, PLEASE SUPPORT IT BY OPENING GITHUB ISSUES OR BETTER SPONSOR THE PROJECT [HERE](https://github.com/sponsors/sewellstephens)**
 
@@ -17,31 +14,21 @@ If you would like to use different database, or want more control you can clone 
 
 ### How to set it up:
 
-**Step 1: install from NPM or clone for more control**
-
-```
-npm i simpler-express-authorize
-```
-
-Or
+**Step 1: clone repo or copy desired code**
 
 ```
 git clone https://github.com/sewellstephens/express-authorize.git
 ```
 
-**Step 2: Add to your code as follows**
+**Step 2: Install dependencies**
 
 ```
-const {simpleExpressAuth} = require("simpler-express-authorize");
-
-...
-
-app.use(simpleExpressAuth);
+npm i
 ```
 
 **Step 3: Update .env with your values**
 
-IMPORTANT: MongoDB URI is required in order to connect to database. If you want to use a different one, you will need to either clone this repo or copy and paste the desired code.
+IMPORTANT: MongoDB URI is required in order to connect to your database. Feel free to modify the code to use a different database.
 
 ```
 DOMAIN= domain here
@@ -59,21 +46,7 @@ MAIL_USER= mail user here
 MONGODB_URI= mongo url here
 ```
 
-If you want to only offer password signin, you will need to add a config like so:
-
-```
-
-const {simpleExpressAuth} = require("simpler-express-authorize");
-
-...
-
-app.use(simpleExpressAuth({
-    passwordOnly: true
-}));
-
-```
-
-Or to only offer Google sign in, replace passwordOnly with googleOnly.
+Thats it! You're all set!
 
 ### Routes to get familiar with
 

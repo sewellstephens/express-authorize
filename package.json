@@ -1,6 +1,6 @@
 {
     "name": "simpler-express-authorize",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "A simple express middleware to authorize users",
     "main": "index.js",
     "scripts": {
