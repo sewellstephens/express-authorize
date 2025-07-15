@@ -1,6 +1,7 @@
 # Simple Express authorization
 
-**PLEASE NOTE: UPDATES WILL CURRENTLY BE MINIMAL DUE TO LACK OF SUPPORT!!! TO KEEP THIS PROJECT ALIVE, PLEASE SUPPORT IT BY OPENING GITHUB ISSUES OR BETTER SPONSOR THE PROJECT [HERE](https://github.com/sponsors/sewellstephens)**
+#### ⚠️ Simple Express authorization is no longer maintained as of 7-15-2025. Please instead use our new Express Starter [here](https://github.com/sewellstephens/react-express-starter).
+
 
 Simple Express authorization promises to make authorization in Express super easy. Its the most straightforward and minimal framework on the market. **No PassportJS used.**
 
